@@ -1,0 +1,178 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+a
+{
+    
+    text-decoration: none;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f5bf42;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 90px;
+    height: 100%;
+}
+nav{
+    text-align: center;
+    font-size: 40px;
+
+}
+.side-bar
+{
+    position: absolute;
+    right: 0;
+    top: 13%;
+    margin-right: 150px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    height: 100vh;
+}
+.side-bar>ul
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.side-bar>ul>li>a
+{
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 2px;
+    font-size: 2em;
+    color: black;
+    /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); */
+}
+.side-bar>ul>li>a::before
+{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+}
+.side-bar>ul>li>a:hover:before
+{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+.header
+{
+    height: 100vh;
+}
+
+
+.header>img
+{
+    border-radius: 500px;
+    border:2px solid black;
+    margin-left: 50px;
+    font-family: 'Bruno Ace SC', cursive;
+    margin-top: 50px;
+}
+.header>#one{
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 70px;
+    padding: 0px;
+    font-weight: 500px;
+    font-family: 'Bruno Ace SC', cursive;
+}
+.header>#two
+{
+    margin-left: 80px;
+    border-bottom: 2px solid black;
+    font-family: 'Bruno Ace SC', cursive;
+    width: 20%;
+}
+.header>p
+{
+    text-transform: uppercase;
+    margin-left: 80px;
+    font-weight: 900;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    
+}
+section
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.body>#project>.pro>h1
+{
+    margin-bottom: 5%;
+    margin-top: 10%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 400%;
+    margin-left: 10%;
+}
+/* .body>#project>.pro>ul>li
+{
+    font-size: 200%;
+    display: inline-block;
+    margin: 0 50px;
+} */
+/* .preject2
+{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-bottom: 3%;
+} */
+.preject2
+{
+    display: flex;
+   align-items: center;
+  justify-content: center;
+  text-align: center;
+   width: 700px;
+  /*height: 50px; */
+  margin-left: 15%;
+  margin-top: 5%;
+  border: 2px solid black;
+  box-shadow: 5px 5px gray;
+
+}
+/* .preject1
+{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    margin-top: 3%;
+    flex-direction: row;
+    margin-left: 15%;
+} */
+.preject1
+{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 15%;
+  /* align-items: center;
+  justify-content: center; */
+   width: 700px;
+  /*height: 50px; */
+  
+  border: 2px solid black;
+  box-shadow: 5px 5px gray 
+
+}
+hr{
+    margin-left: 10%;
+}
+.preject2>h2
+{
+    background-color: red;
+}
